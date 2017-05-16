@@ -22,5 +22,5 @@
 
 .idea/*
 .idea/
-database.yml
+#database.yml
 .env
