@@ -49,6 +49,10 @@ GEM
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
+    dotenv (2.2.0)
+    dotenv-rails (2.2.0)
+      dotenv (= 2.2.0)
+      railties (>= 3.2, < 5.1)
     erubis (2.7.0)
     ffi (1.9.18)
     globalid (0.4.0)
@@ -133,6 +137,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   devise
+  dotenv-rails
   listen (~> 3.0.5)
   pg
   puma (~> 3.0)

@@ -4,11 +4,11 @@ class Api::V1::RegistrationsController < Devise::RegistrationsController
   respond_to :json
 
   def create
-    build_resource
+    build_resource( JSON.parse(params.keys[0])["user"])
     # resource.email = params[:email]
     # resource.password = params[:password]
     #resource.skip_confirmation!
-    #byebug
+
     if resource.save
       sign_in resource
       render :status => 200,
